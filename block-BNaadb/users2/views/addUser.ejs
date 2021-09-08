@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+    
+    
+    <div class="main">
+        
+        <form class="container" method="POST" action="/user">
+            <header><h1>Create Account</h1></header>
+            <div class="form-control">
+                <label for="text">UserName</label> 
+                <input id="text" type="text" name="name" placeholder="Enter Name" required/>
+                
+            </div>
+            
+        <div class="form-control">
+            <label for="text">Email</label>
+            <input id="text" type="email" name="email" placeholder="Enter your email" required/>
+        </div>
+        <div class="form-control">
+            <label for="text">Age</label>
+            <input id="text" type="number" name="age" placeholder="Enter your age" required/>
+        </div>
+        
+        <div class="form-control">
+            <label for="text">Mobile Number</label>
+            <input id="text" type="number" name="mobile" placeholder="Enter your mobile number" required/>
+        </div>
+        
+        <div class="form-control">
+            <label for="text">Creat Password</label>
+            <input id="text" type="password" name="password" placeholder="create password" required/>
+        </div>
+        
+        
+        <div class="form-control"><button type="submit">Add User</button></div>
+        
+        <a href="/user">Back</a>
+        
+      </form>
+      
+    </div>
+    
+</body>
+</html>
+
