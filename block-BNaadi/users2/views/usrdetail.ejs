@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+    <div class="main">
+        
+        <form class="container" >
+            <header><h1><%=user.name%></h1></header>
+            <div class="form-control">
+                <h3>Email:-<%=user.email%></h3>
+                <h3>Age:-<%=user.age%></h3>
+                <h3>Mobile:-<%=user.mobile%></h3>
+                <h3>Password:-<%=user.password%></h3>
+                <a href="/user">Back</a>
+                
+                
+            </div>
+            
+        
+      </form>
+      <a href="/user/<%= user.id %>/edit"><button>Edit</button></a><br>
+      <a href="/user/<%= user.id %>/delete"><button>Delete</button></a>
+    </div>
+</body>
+</html>
